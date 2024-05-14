@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definiciom de CSS y su Uso</title>
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/Proyect.css">
+</head>
+<body>
+
+    <!--Navigation-->
+
+<div class="Container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Proyect.html">HTML</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="proycss.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" 
+              href="tool.html">Herramientas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" 
+              href="learn.html">Donde Aprender</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <hr>
+</div>
+
+<main>
+  <div class="cuerpo">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h3> CSS (Hojas de estilo)</h3>
+          <p>Las hojas de estilo intentan separar el contenido de un página de la forma de presentarlo en pantalla. Esto lo hacen personificando los cambios que las etiquetas de formato HTML realizan en nuestro texto</p>
+          <p>Con las hojas de estilo también podremos decirle a un párrafo que todo su texto sea verde y que además va a tener un margen izquierdo de 30 pixels</p>
+          <p>Las hojas de estilo resuelven estos problemas al mismo tiempo que reemplazan al limitado rango de mecanismos de presentación del HTML. Con las hojas de estilo es más fácil especificar la cantidad de espacio entre líneas, el sangrado de las líneas, los colores a utilizar para el texto y el fondo, el tamaño y estilo de las fuentes, y otros muchos detalles.</p>
+          <p>Por ejemplo, la siguiente hoja de estilo CSS (almacenada en el fichero "especial.css") hace que el color del texto de un párrafo sea verde ("green") y lo rodea de un borde rojo ("red") continuo ("solid"):</p>
+          <p class="ejemplo">P.especial { <br>
+            color : green; <br>
+            border: solid red;
+            }</p>
+        </div>
+        <div class="col-6">
+          <img src="img/estilo1.jpg" alt=" Imagen Html">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <img src="img/enlace.gif" class="card-img-top" alt="" srcset="">
+      </div>
+      <div class="col-6">
+        <p>Los autores pueden vincular esta hoja de estilo a su documento fuente HTML con el elemento <strong>LINK:</strong></p>
+        <p>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"<br>
+          "http://www.w3.org/TR/html4/strict.dtd"><br>
+       < HTML> <br>
+         < HEAD> <br>
+           < TITLE>Un documento con una hoja de estilo externa< TITLE> <br>
+           < LINK href="especial.css" rel="stylesheet" type="text/css"> <br>
+          </ HEAD> <br>
+         < BODY> <br>
+           < P class="especial">Este párrafo debería tener texto especial verde. <br>
+         </ BODY> <br>
+       </ HTML> <br></p>
+      </div>
+    </div>
+  </div>
+  <div class="cuerpo">
+    <div class="estructure">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2><strong>Enlaces a varias hojas de estilo</strong></h2>
+            <p>Se pueden enlazar dos o más hojas de estilo, con lo que el código fuente contendrá tantas etiquetas <link> como hojas enlazadas:</p>
+            
+          </div>
+          <div class="col-md-6">
+            <img src="img/hojas.jpeg" alt="Estructura HTML">
+            <p>En este caso, el navegador aplica las dos hojas de estilo a la página web, una tras otra. Si un elemento está definido en las dos hojas, el navegador hará lo que diga la última hoja de estilo de la lista. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cuerpo">
+    <div class="hojas">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h2>Comentarios en las hojas de estilo</h2>
+            <p> Una hoja de estilo puede contener comentarios. Los delimitadores del comentario son /* ... */ (como en el 
+            lenguaje de programación C). Los comentarios pueden extenderse varias líneas, como ilustra el siguiente ejemplo:</p>
+          </div>
+          <div class="col-8">
+            <img src="img/estilo2.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--Card-->
+<div class="container">
+  <h2>Lenguajes de programación</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="img/Python.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Python</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="https://www.python.org/community/logos/" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="img/js.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">javascript</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="https://lenguajejs.com/javascript/" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="img/php.png" class="card-img-top" alt="...">
+        <div class="card-body">|
+          <h5 class="card-title">PHP</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="https://www.php.net/manual/es/intro-whatis.php" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="line">
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="Lenguaje de etiquetas de hipertexto"><p>Lenguaje de etiquetas de hipertexto</p></a>
+          <a href="https://www.google.com/search?sca_esv=ca37d0d638fdd5cb&rlz=1C1GCEA_esCO1102CO1102&hl=es&
+        sxsrf=ADLYWILKtntRmOq6g2zxPARWh0fuqfERjw:1715652537271&q=python+logo&tbm=isch&source=lnms&sa=X&
+        ved=2ahUKEwjC1qrgh4yGAxXDfDABHdDND5MQ0pQJegQIDRAB&biw=1366&bih=607&dpr=1#imgrc=AEF8aMcuHX-neM"><p>Credito logo 
+Python</p></a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/
+HTML_basics#im%C3%A1genes"><p>Conceptos básicos de HTML</p></a>
+          <a href="https://www.google.com/search?q=javascript+logo&tbm=isch&
+ved=2ahUKEwiLwKHfh4yGAxWaBWIAHWYzCxAQ2-cCegQIABAA&oq=javascript+&
+        gs_lp=EgNpbWciC2phdmFzY3JpcHQgKgIIADIEECMYJzIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAY
+gAQYQxiKBTIFEAAYgAQyBR
+        AAGIAEMgUQABiABDIFEAAYgARIhgtQrwRYrwRwAHgAkAEAmAGJAaABkQKqAQMwLjK4AQHIAQD4AQGKAgtnd3Mtd2l6LWltZ4gGAQ&sclient=img&
+        ei=t8dCZsuIAZqLiLMP5uasgAE&bih=607&biw=1366&rlz=1C1GCEA_esCO1102CO1102&hl=es#imgrc=v-gqnC08q80ShM">Credito logo 
+Javascript</a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.youtube.com/watch?v=Q2imkhmhOFo&t=3150s"><p>Sitio Web con HTML, CSS y Javascript</p></a>
+          <a href="https://heropatterns.com/">Hero patterns</a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.youtube.com/watch?v=33a55MmXzbM&t=331s"><p>Bootstrap 4, Sitio Web Completo - Landing page</
+p></a>
+          <a href="https://www.youtube.com/watch?v=qW49OWt0NrY&list=PLZ2ovOgdI-kUmz8-r2DNigQ_qwpk1s5q4&index=24"><p>Curso 
+aprende Bootstrap 5 desde cero</p></a>
+          <a href="https://www.google.com/search?sca_esv=ca37d0d638fdd5cb&rlz=1C1GCEA_esCO1102CO1102&hl=es&
+        sxsrf=ADLYWIIdHp9U5_cnBSuFEutS5kgXOiYbhQ:1715652648132&q=php&tbm=isch&source=lnms&sa=X&
+        ved=2ahUKEwiHlJmViIyGAxV2pYQIHf7TAlMQ0pQJegQIERAB&biw=1366&bih=607&dpr=1#imgrc=lpVbLgnDu2t-EM"><p>Credito logo 
+PHP</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
